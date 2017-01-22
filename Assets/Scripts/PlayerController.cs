@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float speed        = 0.1f;
-    // public float angularSpeed = 8f;
-    // public float maxSpeed     = 25f;
-    //Rigidbody rb;
-
-
+    public float speed = 2f;
+    
 	void Start () {
         Cursor.lockState = CursorLockMode.Locked;   // Make cursor invisible
-        //rb = GetComponent<Rigidbody>();
     }
 	
 	void Update () {
-	}
+    }
 
     void FixedUpdate()
     {
