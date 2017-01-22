@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class NPCSpawner : MonoBehaviour {
 
-    public GameObject friend;
-    public GameObject stranger;
-    public GameObject junkie;
-    public GameObject murderer;
+    public GameObject nextSpawn;
 
     public int MAX_NPCS       = 10;
     public float friendRate   = 30;
@@ -20,46 +17,89 @@ public class NPCSpawner : MonoBehaviour {
     private SpawnType nextNPC;
     private float rateSum;          // Used for averages
     private float spawnTimer;       // For spawning new NPCS
+    private float timer;
     private bool readyToSpawn;
+    private int numberOfNPCs;
 
 	// Use this for initialization
 	void Start () {
         nextNPC = SpawnType.FRIEND;
         rateSum = friendRate + strangerRate + junkieRate + murdererRate;
-        spawnTimer = Random.Range(0f, 10f);
+        spawnTimer = Random.Range(5f, 15f);
+        timer = 0;
+        numberOfNPCs = 0;
         readyToSpawn = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
+        checkSpawnTimer();
+
         if (readyToSpawn)
         {
             nextNPC = selectSpawn();
             spawnNPC();
+
+            timer = 0;
+            spawnTimer = Random.Range(10f, 20f);
+            readyToSpawn = false;
         }
 	}
+
+    void checkSpawnTimer()
+    {
+        if (timer < spawnTimer && numberOfNPCs <= MAX_NPCS) timer += Time.deltaTime;
+        else if (timer >= spawnTimer && numberOfNPCs <= MAX_NPCS) readyToSpawn = true;
+    }
 
     void spawnNPC()
     {
         switch (nextNPC)
         {
             case SpawnType.FRIEND:
-                
+                spawnFriend();
+                Debug.Log("SPAWNED FRIEND");
                 break;
             case SpawnType.STRANGER:
-
+                spawnStranger();
+                Debug.Log("SPAWNED STRANGER");
                 break;
             case SpawnType.JUNKIE:
-
+                spawnJunkie();
+                Debug.Log("SPAWNED JUNKIE");
                 break;
             case SpawnType.MURDERER:
+                spawnMurderer();
+                Debug.Log("SPAWNED MURDERER");
                 break;
             default:
-
                 break;
         }
     }
+
+    void spawnFriend()
+    {
+        GameObject clone = Instantiate(nextSpawn);
+        clone.transform.parent = transform;
+        clone.GetComponent<FriendController>().enabled = true;
+    }
+    void spawnStranger()
+    {
+        GameObject clone = Instantiate(nextSpawn);
+        clone.transform.parent = transform;
+    }
+    void spawnJunkie()
+    {
+        GameObject clone = Instantiate(nextSpawn);
+        clone.transform.parent = transform;
+    }
+    void spawnMurderer()
+    {
+        GameObject clone = Instantiate(nextSpawn);
+        clone.transform.parent = transform;
+    }
+
 
     SpawnType selectSpawn()
     {

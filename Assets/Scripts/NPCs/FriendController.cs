@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class FriendController : MonoBehaviour {
 
+    public float averageSpeed = 0.3f;
+    public float speedRange   = 0.2f;
+    private float speed;
+
 	// Use this for initialization
 	void Start () {
-		
+        speed = Random.Range(averageSpeed - speedRange, averageSpeed + speedRange);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void FixedUpdate()
+    {
+        transform.Translate(speed * Time.deltaTime, 0, speed* Time.deltaTime);
+    }
 
 
 }
