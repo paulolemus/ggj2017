@@ -7,6 +7,7 @@ public class NPCSpawner : MonoBehaviour {
     public GameObject nextSpawn;
 
     public int MAX_NPCS       = 10;
+    public int numberOfNPCs   = 0;
     public float friendRate   = 30;
     public float strangerRate = 55;
     public float junkieRate   = 10;
@@ -19,13 +20,12 @@ public class NPCSpawner : MonoBehaviour {
     private float spawnTimer;       // For spawning new NPCS
     private float timer;
     private bool readyToSpawn;
-    private int numberOfNPCs;
 
 	// Use this for initialization
 	void Start () {
         nextNPC = SpawnType.FRIEND;
         rateSum = friendRate + strangerRate + junkieRate + murdererRate;
-        spawnTimer = Random.Range(5f, 15f);
+        spawnTimer = Random.Range(1f, 2f);
         timer = 0;
         numberOfNPCs = 0;
         readyToSpawn = false;
@@ -40,6 +40,7 @@ public class NPCSpawner : MonoBehaviour {
         {
             nextNPC = selectSpawn();
             spawnNPC();
+            numberOfNPCs++;
 
             timer = 0;
             spawnTimer = Random.Range(10f, 20f);

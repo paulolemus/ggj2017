@@ -22,6 +22,17 @@ public class BehaviorController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        hasObject = rayScript.hasObject;
+        if (hasObject)
+        {
+            activeNPC = rayScript.hitObject;
+        }
+        else
+        {
+            activeNPC = null;
+        }
+
+
+        // TODO: DO SOMETHING WITH OBJECT AND PLAYER;
 	}
 }

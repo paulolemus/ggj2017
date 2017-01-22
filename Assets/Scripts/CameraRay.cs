@@ -38,16 +38,15 @@ public class CameraRay : MonoBehaviour {
         {
             hitObject = null;
             hasObject = false;
-            //Debug.Log("FALSE");
         }
     }
 
     /* Used for passing to behavior script */
 
-    public bool checkObject()
-    {
-        return hasObject;
-    }
+    //public bool checkObject()
+    //{
+     //   return hasObject;
+    //}
 
     public GameObject getObject()
     {

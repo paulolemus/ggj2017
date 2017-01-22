@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float speed = 0.1f;
+    public float speed = 2f;
     
 	void Start () {
         Cursor.lockState = CursorLockMode.Locked;   // Make cursor invisible
