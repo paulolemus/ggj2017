@@ -50,6 +50,12 @@ ModelImporter:
     7400002: ArmatureAction
     7400004: Idlepose
     7400006: Startwave
+    7400008: Idlepose_001
+    7400010: walk
+    7400012: walkstart
+    7400014: walkend
+    7400016: Wave
+    7400018: Tpose
     9500000: //RootNode
     13700000: Personthing_Prototype
     13700002: 20170120_225856
@@ -75,10 +81,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Default Take
-      takeName: Default Take
-      firstFrame: 40
-      lastFrame: 79
+      name: Idlepose_001
+      takeName: Idlepose_001
+      firstFrame: -1
+      lastFrame: 43
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -265,6 +271,316 @@ ModelImporter:
       takeName: Startwave
       firstFrame: -1
       lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 20170120_225856
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hip
+        weight: 1
+      - path: Armature/hip/chest
+        weight: 1
+      - path: Armature/hip/chest/head
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L/L_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R/L_arm_R
+        weight: 1
+      - path: Armature/U_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L/foot_L
+        weight: 1
+      - path: Armature/U_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R/foot_R
+        weight: 1
+      - path: Personthing_Prototype
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: walk
+      firstFrame: -1
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 20170120_225856
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hip
+        weight: 1
+      - path: Armature/hip/chest
+        weight: 1
+      - path: Armature/hip/chest/head
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L/L_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R/L_arm_R
+        weight: 1
+      - path: Armature/U_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L/foot_L
+        weight: 1
+      - path: Armature/U_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R/foot_R
+        weight: 1
+      - path: Personthing_Prototype
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walkstart
+      takeName: walkstart
+      firstFrame: -1
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 20170120_225856
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hip
+        weight: 1
+      - path: Armature/hip/chest
+        weight: 1
+      - path: Armature/hip/chest/head
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L/L_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R/L_arm_R
+        weight: 1
+      - path: Armature/U_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L/foot_L
+        weight: 1
+      - path: Armature/U_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R/foot_R
+        weight: 1
+      - path: Personthing_Prototype
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walkend
+      takeName: walkend
+      firstFrame: -1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 20170120_225856
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hip
+        weight: 1
+      - path: Armature/hip/chest
+        weight: 1
+      - path: Armature/hip/chest/head
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L/L_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R/L_arm_R
+        weight: 1
+      - path: Armature/U_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L/foot_L
+        weight: 1
+      - path: Armature/U_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R/foot_R
+        weight: 1
+      - path: Personthing_Prototype
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Wave
+      takeName: Wave
+      firstFrame: -1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: 20170120_225856
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/hip
+        weight: 1
+      - path: Armature/hip/chest
+        weight: 1
+      - path: Armature/hip/chest/head
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_L/L_arm_L
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R
+        weight: 1
+      - path: Armature/hip/chest/U_arm_R/L_arm_R
+        weight: 1
+      - path: Armature/U_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L
+        weight: 1
+      - path: Armature/U_leg_L/L_leg_L/foot_L
+        weight: 1
+      - path: Armature/U_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R
+        weight: 1
+      - path: Armature/U_leg_R/L_leg_R/foot_R
+        weight: 1
+      - path: Personthing_Prototype
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tpose
+      takeName: Tpose
+      firstFrame: -1
+      lastFrame: 0
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
