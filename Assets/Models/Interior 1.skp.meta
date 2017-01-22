@@ -5,19 +5,19 @@ licenseType: Free
 SketchUpImporter:
   generateBackFace: 0
   mergeCoplanarFaces: 1
-  selectedNodes: 
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d000000
   assetHash:
     serializedVersion: 2
-    Hash: 81cbbe3ed78718b9d0256b3473afcb9f
+    Hash: 2740fdb66e5a39658fadf9fd3680baa5
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: 12.397607, y: 3.264024, z: -8.216762}
-      lookAt: {x: 5.104006, y: 0.6215539, z: 5.2089443}
-      up: {x: -0.08135147, y: 0.98537177, z: 0.14974782}
+      position: {x: 36.519, y: 29.583698, z: -31.549177}
+      lookAt: {x: 33.34265, y: 25.190434, z: -26.987032}
+      up: {x: -0.35428622, y: 0.7845678, z: 0.50885624}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -56,6 +56,54 @@ SketchUpImporter:
     100056: Windowframe 2
     100058: Windowframe 3
     100060: Windowframe 4
+    100062: Component#5
+    100064: Component#5 1
+    100066: Component#5 2
+    100068: Component#5 3
+    100070: Component#5 4
+    100072: Component#5 5
+    100074: Component#5 6
+    100076: Group 2
+    100078: Group 60
+    100080: Group#19
+    100082: Group#19 1
+    100084: Group#19 10
+    100086: Group#19 11
+    100088: Group#19 12
+    100090: Group#19 13
+    100092: Group#19 14
+    100094: Group#19 15
+    100096: Group#19 16
+    100098: Group#19 17
+    100100: Group#19 18
+    100102: Group#19 19
+    100104: Group#19 2
+    100106: Group#19 20
+    100108: Group#19 21
+    100110: Group#19 22
+    100112: Group#19 23
+    100114: Group#19 24
+    100116: Group#19 25
+    100118: Group#19 26
+    100120: Group#19 27
+    100122: Group#19 3
+    100124: Group#19 4
+    100126: Group#19 5
+    100128: Group#19 6
+    100130: Group#19 7
+    100132: Group#19 8
+    100134: Group#19 9
+    100136: OuterShell
+    100138: OuterShell 1
+    100140: OuterShell 2
+    100142: OuterShell 3
+    100144: OuterShell 4
+    100146: OuterShell 5
+    100148: OuterShell 6
+    100150: Group 62
+    100152: Group 59
+    100154: Group 61
+    100156: Group 63
     400000: Coffee Table
     400002: Component#1
     400004: Component#1 1
@@ -87,6 +135,54 @@ SketchUpImporter:
     400056: Windowframe 2
     400058: Windowframe 3
     400060: Windowframe 4
+    400062: Component#5
+    400064: Component#5 1
+    400066: Component#5 2
+    400068: Component#5 3
+    400070: Component#5 4
+    400072: Component#5 5
+    400074: Component#5 6
+    400076: Group 2
+    400078: Group 60
+    400080: Group#19
+    400082: Group#19 1
+    400084: Group#19 10
+    400086: Group#19 11
+    400088: Group#19 12
+    400090: Group#19 13
+    400092: Group#19 14
+    400094: Group#19 15
+    400096: Group#19 16
+    400098: Group#19 17
+    400100: Group#19 18
+    400102: Group#19 19
+    400104: Group#19 2
+    400106: Group#19 20
+    400108: Group#19 21
+    400110: Group#19 22
+    400112: Group#19 23
+    400114: Group#19 24
+    400116: Group#19 25
+    400118: Group#19 26
+    400120: Group#19 27
+    400122: Group#19 3
+    400124: Group#19 4
+    400126: Group#19 5
+    400128: Group#19 6
+    400130: Group#19 7
+    400132: Group#19 8
+    400134: Group#19 9
+    400136: OuterShell
+    400138: OuterShell 1
+    400140: OuterShell 2
+    400142: OuterShell 3
+    400144: OuterShell 4
+    400146: OuterShell 5
+    400148: OuterShell 6
+    400150: Group 62
+    400152: Group 59
+    400154: Group 61
+    400156: Group 63
     2300000: Coffee Table
     2300002: Component#1
     2300004: Component#1 1
@@ -116,6 +212,47 @@ SketchUpImporter:
     2300052: Windowframe 2
     2300054: Windowframe 3
     2300056: Windowframe 4
+    2300058: Group 2
+    2300060: Group 60
+    2300062: Group#19
+    2300064: Group#19 1
+    2300066: Group#19 10
+    2300068: Group#19 11
+    2300070: Group#19 12
+    2300072: Group#19 13
+    2300074: Group#19 14
+    2300076: Group#19 15
+    2300078: Group#19 16
+    2300080: Group#19 17
+    2300082: Group#19 18
+    2300084: Group#19 19
+    2300086: Group#19 2
+    2300088: Group#19 20
+    2300090: Group#19 21
+    2300092: Group#19 22
+    2300094: Group#19 23
+    2300096: Group#19 24
+    2300098: Group#19 25
+    2300100: Group#19 26
+    2300102: Group#19 27
+    2300104: Group#19 3
+    2300106: Group#19 4
+    2300108: Group#19 5
+    2300110: Group#19 6
+    2300112: Group#19 7
+    2300114: Group#19 8
+    2300116: Group#19 9
+    2300118: OuterShell
+    2300120: OuterShell 1
+    2300122: OuterShell 2
+    2300124: OuterShell 3
+    2300126: OuterShell 4
+    2300128: OuterShell 5
+    2300130: OuterShell 6
+    2300132: Group 62
+    2300134: Group 59
+    2300136: Group 61
+    2300138: Group 63
     3300000: Coffee Table
     3300002: Component#1
     3300004: Component#1 1
@@ -145,6 +282,47 @@ SketchUpImporter:
     3300052: Windowframe 2
     3300054: Windowframe 3
     3300056: Windowframe 4
+    3300058: Group 2
+    3300060: Group 60
+    3300062: Group#19
+    3300064: Group#19 1
+    3300066: Group#19 10
+    3300068: Group#19 11
+    3300070: Group#19 12
+    3300072: Group#19 13
+    3300074: Group#19 14
+    3300076: Group#19 15
+    3300078: Group#19 16
+    3300080: Group#19 17
+    3300082: Group#19 18
+    3300084: Group#19 19
+    3300086: Group#19 2
+    3300088: Group#19 20
+    3300090: Group#19 21
+    3300092: Group#19 22
+    3300094: Group#19 23
+    3300096: Group#19 24
+    3300098: Group#19 25
+    3300100: Group#19 26
+    3300102: Group#19 27
+    3300104: Group#19 3
+    3300106: Group#19 4
+    3300108: Group#19 5
+    3300110: Group#19 6
+    3300112: Group#19 7
+    3300114: Group#19 8
+    3300116: Group#19 9
+    3300118: OuterShell
+    3300120: OuterShell 1
+    3300122: OuterShell 2
+    3300124: OuterShell 3
+    3300126: OuterShell 4
+    3300128: OuterShell 5
+    3300130: OuterShell 6
+    3300132: Group 62
+    3300134: Group 59
+    3300136: Group 61
+    3300138: Group 63
     4300000: Mesh Interior 1
     4300002: Mesh Component#1
     4300004: Mesh TV
@@ -157,6 +335,24 @@ SketchUpImporter:
     4300018: Mesh Windowframe
     4300020: Mesh window
     4300022: Mesh Roof
+    4300024: Mesh Group 2
+    4300026: Mesh Group 60
+    4300028: Mesh OuterShell
+    4300030: Mesh Group#19
+    4300032: Mesh OuterShell
+    4300034: Mesh Group#19
+    4300036: Mesh OuterShell
+    4300038: Mesh Group#19
+    4300040: Mesh OuterShell
+    4300042: Mesh Group#19
+    4300044: Mesh OuterShell
+    4300046: Mesh Group#19
+    4300048: Mesh OuterShell
+    4300050: Mesh Group#19
+    4300052: Mesh Group 62
+    4300054: Mesh Group 59
+    4300056: Mesh Group 61
+    4300058: Mesh Group 63
   materials:
     importMaterials: 1
     materialName: 2
