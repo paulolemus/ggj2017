@@ -11,7 +11,7 @@ public class BehaviorController : MonoBehaviour {
 
     public CameraRay  rayScript;
     public GameObject player;
-    public GameObject activeNPC;
+    [HideInInspector] public GameObject activeNPC;
     private GameObject oldNPC;
 
     private bool hasObject;

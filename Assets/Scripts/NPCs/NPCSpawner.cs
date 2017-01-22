@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* This script will handle cycling through all of the npcs
+ * and sets their type and materials
+ */
+
 public class NPCSpawner : MonoBehaviour {
 
-    public GameObject nextSpawn;
-    public Transform[] spawnPoints;
+    public GameObject[] npcList;
+    public Material[] randomMaterials;
 
-    public int MAX_NPCS       = 10;
-    public int numberOfNPCs   = 0;
     public float friendRate   = 30;
     public float strangerRate = 55;
     public float junkieRate   = 10;
@@ -25,92 +27,58 @@ public class NPCSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        nextNPC = SpawnType.FRIEND;
         rateSum = friendRate + strangerRate + junkieRate + murdererRate;
-        spawnTimer = Random.Range(1f, 2f);
-        timer = 0;
-        numberOfNPCs = 0;
-        readyToSpawn = false;
+
+        for (int i = 0; i < npcList.Length; i++)
+        {
+            nextNPC = selectSpawn();
+            selectType(i);
+        }
+        selectMaterial();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-        checkSpawnTimer();
-
-        if (readyToSpawn)
-        {
-            randomPoint = Random.Range(0, spawnPoints.Length);
-            nextNPC = selectSpawn();
-            spawnNPC();
-            numberOfNPCs++;
-
-            timer = 0;
-            spawnTimer = Random.Range(5f, 15f);
-            readyToSpawn = false;
-        }
 	}
 
-    void checkSpawnTimer()
-    {
-        if (timer < spawnTimer && numberOfNPCs <= MAX_NPCS) timer += Time.deltaTime;
-        else if (timer >= spawnTimer && numberOfNPCs <= MAX_NPCS) readyToSpawn = true;
-    }
 
-    void spawnNPC()
+    void selectType(int i)
     {
         switch (nextNPC)
         {
             case SpawnType.FRIEND:
-                spawnFriend();
-                Debug.Log("SPAWNED FRIEND");
+                spawnFriend(i);
                 break;
             case SpawnType.STRANGER:
-                spawnStranger();
-                Debug.Log("SPAWNED STRANGER");
+                spawnStranger(i);
                 break;
             case SpawnType.JUNKIE:
-                spawnJunkie();
-                Debug.Log("SPAWNED JUNKIE");
+                spawnJunkie(i);
                 break;
             case SpawnType.MURDERER:
-                spawnMurderer();
-                Debug.Log("SPAWNED MURDERER");
+                spawnMurderer(i);
                 break;
             default:
+                spawnFriend(i);
                 break;
         }
     }
 
-    void spawnFriend()
+    void spawnFriend(int i)
     {
-        GameObject clone = Instantiate(nextSpawn, 
-                                       spawnPoints[randomPoint].position,
-                                       spawnPoints[randomPoint].rotation);
-        clone.transform.parent = transform;
-        clone.GetComponent<FriendController>().enabled = true;
+        npcList[i].GetComponent<FriendController>().enabled = true;
     }
-    void spawnStranger()
+    void spawnStranger(int i)
     {
-        GameObject clone = Instantiate(nextSpawn,
-                                       spawnPoints[randomPoint].position,
-                                       spawnPoints[randomPoint].rotation);
-        clone.transform.parent = transform;
+        npcList[i].GetComponent<StrangerController>().enabled = true;
     }
-    void spawnJunkie()
+    void spawnJunkie(int i)
     {
-        GameObject clone = Instantiate(nextSpawn,
-                                       spawnPoints[randomPoint].position,
-                                       spawnPoints[randomPoint].rotation);
-        clone.transform.parent = transform;
+        npcList[i].GetComponent<JunkieController>().enabled = true;
     }
-    void spawnMurderer()
+    void spawnMurderer(int i)
     {
-        GameObject clone = Instantiate(nextSpawn,
-                                       spawnPoints[randomPoint].position,
-                                       spawnPoints[randomPoint].rotation);
-        clone.transform.parent = transform;
-        clone.GetComponent<MurdererController>().enabled = true;
+        npcList[i].GetComponent<MurdererController>().enabled = true;
     }
 
 
@@ -136,6 +104,14 @@ public class NPCSpawner : MonoBehaviour {
         else
         {
             return SpawnType.FRIEND;
+        }
+    }
+
+    void selectMaterial()
+    {
+        foreach(GameObject npc in npcList)
+        {
+            npc.GetComponent<Renderer>().material = randomMaterials[Random.Range(0, randomMaterials.Length)];
         }
     }
 }

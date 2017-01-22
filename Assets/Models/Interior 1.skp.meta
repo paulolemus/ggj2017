@@ -353,6 +353,72 @@ SketchUpImporter:
     4300054: Mesh Group 59
     4300056: Mesh Group 61
     4300058: Mesh Group 63
+    6400000: Coffee Table
+    6400002: Coffee Table 1
+    6400004: Coffee Table 2
+    6400006: Component#1
+    6400008: Component#1 1
+    6400010: Component#3
+    6400012: Component#3 1
+    6400014: Component#4
+    6400016: Component#4 1
+    6400018: door
+    6400020: door 1
+    6400022: door 2
+    6400024: doorway
+    6400026: doorway 1
+    6400028: doorway 2
+    6400030: Group 1
+    6400032: Group 59
+    6400034: Group 61
+    6400036: Group 63
+    6400038: Group#19
+    6400040: Group#19 1
+    6400042: Group#19 10
+    6400044: Group#19 11
+    6400046: Group#19 12
+    6400048: Group#19 13
+    6400050: Group#19 14
+    6400052: Group#19 15
+    6400054: Group#19 16
+    6400056: Group#19 17
+    6400058: Group#19 18
+    6400060: Group#19 19
+    6400062: Group#19 2
+    6400064: Group#19 20
+    6400066: Group#19 21
+    6400068: Group#19 22
+    6400070: Group#19 23
+    6400072: Group#19 24
+    6400074: Group#19 25
+    6400076: Group#19 26
+    6400078: Group#19 27
+    6400080: Group#19 3
+    6400082: Group#19 4
+    6400084: Group#19 5
+    6400086: Group#19 6
+    6400088: Group#19 7
+    6400090: Group#19 8
+    6400092: Group#19 9
+    6400094: OuterShell
+    6400096: OuterShell 1
+    6400098: OuterShell 2
+    6400100: OuterShell 3
+    6400102: OuterShell 4
+    6400104: OuterShell 5
+    6400106: OuterShell 6
+    6400108: Roof
+    6400110: TV
+    6400112: window
+    6400114: window 1
+    6400116: window 2
+    6400118: window 3
+    6400120: window 4
+    6400122: Windowframe
+    6400124: Windowframe 1
+    6400126: Windowframe 2
+    6400128: Windowframe 3
+    6400130: Windowframe 4
   materials:
     importMaterials: 1
     materialName: 2
@@ -379,7 +445,7 @@ SketchUpImporter:
     lODScreenPercentages: []
     globalScale: 0.0254
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
