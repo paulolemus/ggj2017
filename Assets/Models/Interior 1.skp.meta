@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: dd61dd4296aad4090b02bc1e9f9d7f2a
+timeCreated: 1485049098
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000
+  assetHash:
+    serializedVersion: 2
+    Hash: f83fcb83991e57840d64e35516bb8fea
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 10.545469, y: 11.1982975, z: 15.157137}
+      lookAt: {x: 4.005384, y: -0.867396, z: 4.3193026}
+      up: {x: -0.3564794, y: 0.72384614, z: -0.59073615}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Coffee Table
+    100002: Component#1
+    100004: Component#1 1
+    100006: Couch
+    100008: door
+    100010: door 1
+    100012: door 2
+    100014: doorway
+    100016: //RootNode
+    100018: TV
+    400000: Coffee Table
+    400002: Component#1
+    400004: Component#1 1
+    400006: Couch
+    400008: door
+    400010: door 1
+    400012: door 2
+    400014: doorway
+    400016: //RootNode
+    400018: TV
+    2300000: Coffee Table
+    2300002: Component#1
+    2300004: Component#1 1
+    2300006: door
+    2300008: door 1
+    2300010: door 2
+    2300012: doorway
+    2300014: //RootNode
+    2300016: TV
+    3300000: Coffee Table
+    3300002: Component#1
+    3300004: Component#1 1
+    3300006: door
+    3300008: door 1
+    3300010: door 2
+    3300012: doorway
+    3300014: //RootNode
+    3300016: TV
+    4300000: Mesh Interior 1
+    4300002: Mesh Component#1
+    4300004: Mesh TV
+    4300006: Mesh door
+    4300008: Mesh doorway
+    4300010: Mesh Coffee Table
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
