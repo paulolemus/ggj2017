@@ -4,20 +4,20 @@ timeCreated: 1485049098
 licenseType: Free
 SketchUpImporter:
   generateBackFace: 0
-  mergeCoplanarFaces: 0
-  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000
+  mergeCoplanarFaces: 1
+  selectedNodes: 
   assetHash:
     serializedVersion: 2
-    Hash: f83fcb83991e57840d64e35516bb8fea
+    Hash: 81cbbe3ed78718b9d0256b3473afcb9f
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: 10.545469, y: 11.1982975, z: 15.157137}
-      lookAt: {x: 4.005384, y: -0.867396, z: 4.3193026}
-      up: {x: -0.3564794, y: 0.72384614, z: -0.59073615}
+      position: {x: 12.397607, y: 3.264024, z: -8.216762}
+      lookAt: {x: 5.104006, y: 0.6215539, z: 5.2089443}
+      up: {x: -0.08135147, y: 0.98537177, z: 0.14974782}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -35,6 +35,27 @@ SketchUpImporter:
     100014: doorway
     100016: //RootNode
     100018: TV
+    100020: Coffee Table 1
+    100022: Coffee Table 2
+    100024: Component#3
+    100026: Component#3 1
+    100028: Component#4
+    100030: Component#4 1
+    100032: Couch 1
+    100034: doorway 1
+    100036: doorway 2
+    100038: Group 1
+    100040: Roof
+    100042: window
+    100044: window 1
+    100046: window 2
+    100048: window 3
+    100050: window 4
+    100052: Windowframe
+    100054: Windowframe 1
+    100056: Windowframe 2
+    100058: Windowframe 3
+    100060: Windowframe 4
     400000: Coffee Table
     400002: Component#1
     400004: Component#1 1
@@ -45,6 +66,27 @@ SketchUpImporter:
     400014: doorway
     400016: //RootNode
     400018: TV
+    400020: Coffee Table 1
+    400022: Coffee Table 2
+    400024: Component#3
+    400026: Component#3 1
+    400028: Component#4
+    400030: Component#4 1
+    400032: Couch 1
+    400034: doorway 1
+    400036: doorway 2
+    400038: Group 1
+    400040: Roof
+    400042: window
+    400044: window 1
+    400046: window 2
+    400048: window 3
+    400050: window 4
+    400052: Windowframe
+    400054: Windowframe 1
+    400056: Windowframe 2
+    400058: Windowframe 3
+    400060: Windowframe 4
     2300000: Coffee Table
     2300002: Component#1
     2300004: Component#1 1
@@ -54,6 +96,26 @@ SketchUpImporter:
     2300012: doorway
     2300014: //RootNode
     2300016: TV
+    2300018: Coffee Table 1
+    2300020: Coffee Table 2
+    2300022: Component#3
+    2300024: Component#3 1
+    2300026: Component#4
+    2300028: Component#4 1
+    2300030: doorway 1
+    2300032: doorway 2
+    2300034: Group 1
+    2300036: Roof
+    2300038: window
+    2300040: window 1
+    2300042: window 2
+    2300044: window 3
+    2300046: window 4
+    2300048: Windowframe
+    2300050: Windowframe 1
+    2300052: Windowframe 2
+    2300054: Windowframe 3
+    2300056: Windowframe 4
     3300000: Coffee Table
     3300002: Component#1
     3300004: Component#1 1
@@ -63,12 +125,38 @@ SketchUpImporter:
     3300012: doorway
     3300014: //RootNode
     3300016: TV
+    3300018: Coffee Table 1
+    3300020: Coffee Table 2
+    3300022: Component#3
+    3300024: Component#3 1
+    3300026: Component#4
+    3300028: Component#4 1
+    3300030: doorway 1
+    3300032: doorway 2
+    3300034: Group 1
+    3300036: Roof
+    3300038: window
+    3300040: window 1
+    3300042: window 2
+    3300044: window 3
+    3300046: window 4
+    3300048: Windowframe
+    3300050: Windowframe 1
+    3300052: Windowframe 2
+    3300054: Windowframe 3
+    3300056: Windowframe 4
     4300000: Mesh Interior 1
     4300002: Mesh Component#1
     4300004: Mesh TV
     4300006: Mesh door
     4300008: Mesh doorway
     4300010: Mesh Coffee Table
+    4300012: Mesh Group 1
+    4300014: Mesh Component#3
+    4300016: Mesh Component#4
+    4300018: Mesh Windowframe
+    4300020: Mesh window
+    4300022: Mesh Roof
   materials:
     importMaterials: 1
     materialName: 2
