@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPCSpawner : MonoBehaviour {
 
     public GameObject nextSpawn;
+    public Transform[] spawnPoints;
 
     public int MAX_NPCS       = 10;
     public int numberOfNPCs   = 0;
@@ -16,6 +17,7 @@ public class NPCSpawner : MonoBehaviour {
     private enum SpawnType{FRIEND, STRANGER, JUNKIE, MURDERER};
 
     private SpawnType nextNPC;
+    private int randomPoint;
     private float rateSum;          // Used for averages
     private float spawnTimer;       // For spawning new NPCS
     private float timer;
@@ -38,12 +40,13 @@ public class NPCSpawner : MonoBehaviour {
 
         if (readyToSpawn)
         {
+            randomPoint = Random.Range(0, spawnPoints.Length);
             nextNPC = selectSpawn();
             spawnNPC();
             numberOfNPCs++;
 
             timer = 0;
-            spawnTimer = Random.Range(10f, 20f);
+            spawnTimer = Random.Range(5f, 15f);
             readyToSpawn = false;
         }
 	}
@@ -81,24 +84,33 @@ public class NPCSpawner : MonoBehaviour {
 
     void spawnFriend()
     {
-        GameObject clone = Instantiate(nextSpawn);
+        GameObject clone = Instantiate(nextSpawn, 
+                                       spawnPoints[randomPoint].position,
+                                       spawnPoints[randomPoint].rotation);
         clone.transform.parent = transform;
         clone.GetComponent<FriendController>().enabled = true;
     }
     void spawnStranger()
     {
-        GameObject clone = Instantiate(nextSpawn);
+        GameObject clone = Instantiate(nextSpawn,
+                                       spawnPoints[randomPoint].position,
+                                       spawnPoints[randomPoint].rotation);
         clone.transform.parent = transform;
     }
     void spawnJunkie()
     {
-        GameObject clone = Instantiate(nextSpawn);
+        GameObject clone = Instantiate(nextSpawn,
+                                       spawnPoints[randomPoint].position,
+                                       spawnPoints[randomPoint].rotation);
         clone.transform.parent = transform;
     }
     void spawnMurderer()
     {
-        GameObject clone = Instantiate(nextSpawn);
+        GameObject clone = Instantiate(nextSpawn,
+                                       spawnPoints[randomPoint].position,
+                                       spawnPoints[randomPoint].rotation);
         clone.transform.parent = transform;
+        clone.GetComponent<MurdererController>().enabled = true;
     }
 
 

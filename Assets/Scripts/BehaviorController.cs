@@ -12,6 +12,7 @@ public class BehaviorController : MonoBehaviour {
     public CameraRay  rayScript;
     public GameObject player;
     public GameObject activeNPC;
+    private GameObject oldNPC;
 
     private bool hasObject;
 
@@ -26,13 +27,43 @@ public class BehaviorController : MonoBehaviour {
         if (hasObject)
         {
             activeNPC = rayScript.hitObject;
+            setIsStaredAt(true);
+            setIsWavedAt();
+            setIsFlippedAt();
+            
         }
-        else
+        else if(activeNPC != null)
         {
+            setIsStaredAt(false);
+            oldNPC = activeNPC;
             activeNPC = null;
         }
-
-
+        
         // TODO: DO SOMETHING WITH OBJECT AND PLAYER;
+
 	}
+    void setIsStaredAt(bool b)
+    {
+        activeNPC.GetComponent<FriendController>().isPlayerStaring = b;
+        activeNPC.GetComponent<StrangerController>().isPlayerStaring = b;
+        activeNPC.GetComponent<JunkieController>().isPlayerStaring = b;
+        activeNPC.GetComponent<MurdererController>().isPlayerStaring = b;
+        
+    }
+    void setIsWavedAt()
+    {
+        bool b = player.GetComponent<PlayerStateController>().waving;
+        activeNPC.GetComponent<FriendController>().isPlayerWaving = b;
+        activeNPC.GetComponent<StrangerController>().isPlayerWaving = b;
+        activeNPC.GetComponent<JunkieController>().isPlayerWaving = b;
+        activeNPC.GetComponent<MurdererController>().isPlayerWaving = b;
+    }
+    void setIsFlippedAt()
+    {
+        bool b = player.GetComponent<PlayerStateController>().flipping;
+        activeNPC.GetComponent<FriendController>().isPlayerFlipping = b;
+        activeNPC.GetComponent<StrangerController>().isPlayerFlipping = b;
+        activeNPC.GetComponent<JunkieController>().isPlayerFlipping = b;
+        activeNPC.GetComponent<MurdererController>().isPlayerFlipping = b;
+    }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MurdererController : MonoBehaviour {
+public class MurdererController : AIController {
 
 	// Use this for initialization
 	void Start () {
