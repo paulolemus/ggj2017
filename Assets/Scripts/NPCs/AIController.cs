@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour {
 
-    public float averageSpeed = 0.3f;
+    public float averageSpeed = 0.4f;
     public float speedRange = 0.2f;
     public float idleProbability = 10;    // chance player is an idler, /100
     public float waveTendency = 0.25f; // chance of waving, /100

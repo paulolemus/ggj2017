@@ -14,19 +14,22 @@ public class PlayerStateController : MonoBehaviour {
     public bool waving      = false;
     public bool flipping    = false;
     public float actionTime = 2;
-    public float speed      = 20;
+    public float speed      = 26f;
 
     private bool movingUp;
     private bool movingDown;
     private float timer = 0;
 
 	void Start () {
+        Debug.Log("Initial values: " + waveObject.transform.position);
+        Debug.Log("Initial values: " + flipObject.transform.position);
         movingDown = false;
         movingUp = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        Debug.Log(waveObject.transform.position);
         checkHands();
         updateHands();
 	}
@@ -36,16 +39,16 @@ public class PlayerStateController : MonoBehaviour {
         // TODO CODE TO MOVE HANDS UP AND DOWN
         if (movingUp && waving)
         {
-            waveObject.transform.Translate(transform.up * speed);
-            if(waveObject.transform.position.y >= -40)
+            waveObject.transform.Translate(waveObject.transform.parent.transform.up * speed);
+            if (waveObject.transform.position.y >= 90f)
             {
                 movingUp = false;
             }
         }
         if (movingDown && waving)
         {
-            waveObject.transform.Translate(-transform.up * speed);
-            if (waveObject.transform.position.y <= -300)
+            waveObject.transform.Translate(-waveObject.transform.parent.transform.up * speed);
+            if (waveObject.transform.position.y <= -130f)
             {
                 movingDown = false;
                 waving = false;
@@ -54,8 +57,8 @@ public class PlayerStateController : MonoBehaviour {
 
         if (movingUp && flipping)
         {
-            flipObject.transform.Translate(transform.up * speed);
-            if (flipObject.transform.position.y >= 50)
+            flipObject.transform.Translate(flipObject.transform.parent.transform.up * speed);
+            if (flipObject.transform.position.y >= 90f)
             {
                 movingUp = false;
 
@@ -63,8 +66,8 @@ public class PlayerStateController : MonoBehaviour {
         }
         if (movingDown && flipping)
         {
-            flipObject.transform.Translate(-transform.up * speed);
-            if (flipObject.transform.position.y <= -180)
+            flipObject.transform.Translate(-flipObject.transform.parent.transform.up * speed);
+            if (flipObject.transform.position.y <= -130f)
             {
                 movingDown = false;
                 flipping = false;
