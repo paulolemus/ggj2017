@@ -23,25 +23,63 @@ using System.Linq;
 
 public class FriendController : AIController {
 
+    private GameObject player;
+    private float staringTimer = 0;
+
+
     
 	// Use this for initialization
 	void Start () {
         if (!idler && pathTag != null) getWP();
         idleTransform = transform;
         speed = Random.Range(averageSpeed - speedRange, averageSpeed + speedRange);
+        player = GameObject.Find("Player");
     }
 
     void FixedUpdate()
     {
 
         // friend behaviors
+        handleInput();
 
         // If not activated by player, act normally
-        if (true) // Not interacting
+        if (!interacting) // Not interacting
         {
             if (!idler) walkAround();
             else idleAround();
         }
+    }
+
+    void handleInput()
+    {
+        // work with player staring waving flipping
+        if(interacting)
+        {
+            Quaternion rot = Quaternion.LookRotation(player.transform.position - transform.position);
+            transform.rotation = Quaternion.Lerp(transform.rotation, rot, Time.deltaTime * turnSpeed);
+        }
+        if (isPlayerStaring || interacting) staringTimer += Time.deltaTime;
+        if(staringTimer >= 2 && !interacting)
+        {
+            interacting = true;
+            Debug.Log("INTERACTIING");
+            if (!idler) idleTransform = transform;
+        }
+        if (staringTimer >= 4 || (interacting && isPlayerWaving)) waving = true;
+        if (isPlayerWaving && waving)
+        {
+            success = true;
+        }
+        if(staringTimer >= 7 && interacting)
+        {
+            waving = false;
+            interacting = false;
+            staringTimer = 0;
+            if (!success) ac.minorAwkward();
+            success = false; 
+
+        }
+        
     }
 
     void walkAround()
@@ -49,7 +87,7 @@ public class FriendController : AIController {
         if (path.Length > 0)
         {
             float distance = Vector3.Distance(path[currentNode].position, transform.position);
-            if (distance < 0.4) { currentNode++; Debug.Log("Selecteed Next Node"); }
+            if (distance < 0.4) { currentNode++; }
             else
             {
                 transform.position = Vector3.MoveTowards(transform.position, 

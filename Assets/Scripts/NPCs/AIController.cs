@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour {
 
+    public AwkwardController ac;
     [HideInInspector]
     public Transform idleTransform;       // initial pos and rot
     [HideInInspector]
@@ -30,7 +31,9 @@ public class AIController : MonoBehaviour {
     [HideInInspector]
     public bool waving = false;
 
+    protected bool success = false;
     protected float speed;
+    protected bool interacting = false;
     protected int currentNode = 0;
 
 }

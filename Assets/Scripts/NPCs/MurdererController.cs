@@ -41,7 +41,7 @@ public class MurdererController : AIController {
         chase();
 
         // If not chasing, then the dude may either wander or idle.
-        if (true) {
+        if (!interacting) {
             if (!idler) walkAround();
             else idleAround();
         }
@@ -52,8 +52,7 @@ public class MurdererController : AIController {
         if (path.Length > 0)
         {
             float distance = Vector3.Distance(path[currentNode].position, transform.position);
-            Debug.Log("Distance: " + distance);
-            if (distance < 0.4) { currentNode++; Debug.Log("Selecteed Next Node"); }
+            if (distance < 0.4) { currentNode++; }
             else
             {
                 transform.position = Vector3.MoveTowards(transform.position,
@@ -110,15 +109,22 @@ public class MurdererController : AIController {
         if (playerInBound && staredTooLong)
         {
             chaseHim = true;
+            interacting = true;
+            ac.gettingAwkward(true);
         }
-        else chaseHim = false;
-    }
+        else
+        {
+            chaseHim = false;
+            ac.gettingAwkward(false);
+        }
+        }
 
     void chase()
     {
         if(chaseTimer >= chaseTimeMax)
         {
             chaseHim = false;
+            interacting = false;
             staredTooLong = false;
             chaseTimer = 0;
         }
@@ -129,7 +135,6 @@ public class MurdererController : AIController {
             straffeH = currSpeed * Time.deltaTime;
             transform.LookAt(player.transform);
             transform.Translate(0, 0, straffeH);
-
         }
     }
     void checkPlayerDistance()

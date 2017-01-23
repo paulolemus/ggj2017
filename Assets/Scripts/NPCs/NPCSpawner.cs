@@ -95,7 +95,7 @@ public class NPCSpawner : MonoBehaviour {
         }
         else if (choice > friendRate + strangerRate && choice <= (rateSum - murdererRate))
         {
-            return SpawnType.JUNKIE;
+            return SpawnType.MURDERER;
         }
         else if (choice > (rateSum - murdererRate)) 
         {

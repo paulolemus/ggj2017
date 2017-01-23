@@ -35,7 +35,7 @@ public class StrangerController : AIController {
         if (path.Length > 0)
         {
             float distance = Vector3.Distance(path[currentNode].position, transform.position);
-            if (distance < 0.4) { currentNode++; Debug.Log("Selecteed Next Node"); }
+            if (distance < 0.4) { currentNode++; }
             else
             {
                 transform.position = Vector3.MoveTowards(transform.position,

@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraRay : MonoBehaviour {
 
     public GameObject hitObject;
-    public float rayMax = 10f;
+    public float rayMax = 12f;
     public bool hasObject;
 
     void Start()
@@ -31,8 +31,6 @@ public class CameraRay : MonoBehaviour {
         {
             hitObject = hit.transform.gameObject;
             hasObject = true;
-            Debug.Log("Hit and attached");
-            Debug.Log(hitObject.name);
         }
         else
         {
